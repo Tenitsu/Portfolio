@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.75" />
+		<title>Amy Hsuanwen Wang's Portfolio</title> <!--Title-->
+		<link rel="stylesheet" type = "text/css" href="portfolio.css"/> <!-- calling on style sheet and tell it that it's css -->
+		<link rel="stylesheet" media="(max-width: 1024px)" type="text/css" href="portfolio_tablet.css" />  <!--Css for tablet-->
+		<link rel="stylesheet" media="(max-width: 824px)" type="text/css" href="portfolio_mobile.css" /> <!-- Css for mobile-->
+
+		<!--Fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+		<!--Style for slider-->
+		<link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'> 
+
+		<!--JQuery-->
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script type='text/javascript' src='js/jquery.min.js'></script>
+    	<script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+    	<script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+    	<script type='text/javascript' src='js/camera.js'></script> 
+
+		<script>
+			$(document).ready(function(){
+			  $("#contactme").click(function(){
+			    $("#contactinfo").slideToggle();
+			    $(this).toggleClass("down");
+			  });
+			});
+		</script>
+	</head>
+
+	<body>
+		<!--Page Container-->
+		<div class="page gu6">
+		<!--Create Head row for Logo and Page title-->
+				<div class="row pg-header" id="Header">
+					<div class="col gu6" id="LogoArea">
+						<img id="logo" src="img/Logo.png" alt="Amy Hsuanwen Wang's Portfolio" />
+					</div><!--Closes the gu2 for logo-->
+
+					<div class="col gu6" id="navbk">
+						<nav>
+							<ul id="nav">
+								<li><a href="#" id="selected">my work</a>
+									<ul>
+										<li><a href="#">design works</a></li>
+										<li><a href="#">3D environments</a></li>
+										<li><a href="#">illustrations/conceptual art</a></li>
+									</ul>
+								</li>
+								<li><a href="#">about me</a></li>
+								<li><a href="#" id="contactme" title="button">contact me</a></li>
+							</ul>
+						</nav>
+					</div><!--Closes col gu6-->
+
+					<div class="col gu6" id="contactinfo">
+						<ul>
+							<li><img id="icon" src="img/Email.png" alt="email" /><a id="email" href="mailto:AmyHsuanwenWang@gmail.com">AmyHsuanwenWang@gmail.com</a></li>
+							<li>|</li>
+							<li id="phone"><img id="icon2" src="img/mobile.png" alt="mobile" />(604) 376 1859</li>
+						</ul>
+					</div><!--Closes contact window-->
+
+					<div class="col gu6" id="snavbk">
+						<nav>
+							<ul id="snav">
+								<li><a href="#">design works</a></li>
+								<li><a href="#" id="selectedb">3D environments</a></li>
+								<li><a href="#">illustrations/conceptual art</a></li>
+							<ul>
+						</nav>
+					</div>
+				</div><!--Closes row pg-header-->
+
+			<!--Area for actual content-->
+			<!--Where the actual slider and info go-->
+			<div id="wrap">
+				<h1 id="title">Portfolio Wroks</h1>
+				<!--One big container-->
+				<div class="col gu3">
+					<h1>Hi1</h1>
+					<div class="col gu5_5">
+						<h1>hi</h1>
+					</div><!--first item-->
+
+					<div class="col gu5_5">
+						<h1>hi</h1>
+					</div><!--2nd item-->
+
+					<div class="col gu5_5">
+						<h1>hi</h1>
+					</div><!--3rd item-->
+				</div><!--Closes Col gu3_1-->
+
+				<div class="col gu3">
+					<h1>Hi2</h1>
+
+					<div class="col gu5_5">
+						<h1>hi</h1>
+					</div><!--first item-->
+
+					<div class="col gu5_5">
+						<h1>hi</h1>
+					</div><!--2nd item-->
+
+					<div class="col gu5_5">
+						<h1>hi</h1>
+					</div><!--3rd item-->
+				</div><!--Closes Col gu3_2-->
+
+				<!--Illustration/Conceptual Art-->
+				<div class="col gu3">
+					<h1>Hi3</h1>
+					<div class="col gu5_5">
+						<h1>hi</h1>
+					</div><!--first item-->
+
+					<div class="col gu5_5">
+						<h1>hi</h1>
+					</div><!--2nd item-->
+
+					<div class="col gu5_5">
+						<h1>hi</h1>
+					</div><!--3rd item-->
+				</div><!--Closes Col gu3_3-->
+
+				<footer>
+					<h6>&copy; Amy Hsuanwen Wang</h6>
+				</footer>
+
+			</div><!--Closes the wrap-->
+		</div><!--Closes page gu6 (The overall container) -->
+	</body>
+</html>

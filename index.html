@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.75" />
+		<title>Amy Hsuanwen Wang's Portfolio</title> <!--Title-->
+		<link rel="stylesheet" type = "text/css" href="portfolio.css"/> <!-- calling on style sheet and tell it that it's css -->
+		<link rel="stylesheet" media="(max-width: 1024px)" type="text/css" href="portfolio_tablet.css" />  <!--Css for tablet-->
+		<link rel="stylesheet" media="(max-width: 750px)" type="text/css" href="portfolio_mobile.css" /> <!-- Css for mobile-->
+
+		<!--Fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+		<!--Style for slider-->
+		<link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'> 
+
+		<!--JQuery-->
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script type='text/javascript' src='js/jquery.min.js'></script>
+    	<script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+    	<script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+    	<script type='text/javascript' src='js/camera.js'></script> 
+    	
+
+	    <script>
+			jQuery(function(){
+				jQuery('#camera_wrap_1').camera({
+				});
+			});
+		</script>
+
+		<script>
+			$(document).ready(function(){
+			  $("#contactme").click(function(){
+			    $("#contactinfo").slideToggle();
+			    $(this).toggleClass("down");
+			  });
+			});
+		</script>
+	</head>
+
+	<body>
+		<!--Page Container-->
+		<div class="page gu6">
+		<!--Create Head row for Logo and Page title-->
+				<div class="row pg-header" id="Header">
+					<div class="col gu6" id="LogoArea">
+						<img id="logo" src="img/Logo.png" alt="Amy Hsuanwen Wang's Portfolio" />
+					</div><!--Closes the gu2 for logo-->
+
+					<div class="col gu6">
+						<nav>
+							<ul id="nav">
+								<li><a href="#">my work</a>
+									<ul>
+										<li><a href="#">design works</a></li>
+										<li><a href="#">3D environments</a></li>
+										<li><a href="#">illustrations/conceptual art</a></li>
+									</ul>
+								</li>
+								<li><a href="#">about me</a></li>
+								<li><a href="#" id="contactme" title="button">contact me</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="col gu6" id="contactinfo">
+						<ul>
+							<li><img id="icon" src="img/Email.png" alt="email" /><a id="email" href="mailto:AmyHsuanwenWang@gmail.com">AmyHsuanwenWang@gmail.com</a></li>
+							<li>|</li>
+							<li id="phone"><img id="icon2" src="img/mobile.png" alt="mobile" />(604) 376 1859</li>
+						</ul>
+					</div><!--Closes contact window-->
+				</div><!--Closes row pg-header-->
+
+			<!--Area for actual content-->
+			<!--Where the actual slider and info go-->
+			<div id="wrap">
+					<!--For the Featured Work area-->
+					<div class="col gu6">
+					<!--Subdivide into slider area and info area-->
+						<!--Where the slider go-->
+						<div class="col gu6" id="Slider">
+						<!--<img id="placeholder" src="img/1.png" alt="slider place holder"/>-->
+
+						<!--Slider-->
+					        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+
+					            <div data-thumb="img/top/FA1.jpg" data-src="img/top/FA1.jpg" data-link="#">
+					                <div class="camera_caption fadeFromBottom">
+					                	<h2>Finding Alice</h2>
+					                    <p>An immersive environment project with an emphasis on user experience design. The idea is to create an environment where the user will suspend their disbelief and enjoy a rich experience without feeling lost.</p>
+					                </div>
+					            </div>
+
+					            <div data-thumb="img/top/Version2.jpg" data-src="img/top/Version2.jpg" data-link="#">
+					                <div class="camera_caption fadeFromBottom">
+					                	<h2>Da Taipei Business Card Layout Design</h2>
+					                    <p>A project I did for a food stand in Taiwan. The challenge was to work with graphic design in a different language but still effectively communicating important information.</p>
+					                </div>
+					            </div>
+
+					            <div data-thumb="img/top/Denebola.jpg" data-src="img/top/Denebola.jpg" data-link="#">
+					                <div class="camera_caption fadeFromBottom">
+					                    <h2>Denebola The Leo</h2>
+					                    <p>An original character vector illustration created using Adobe Illustrator.
+											Given the theme of Leo, I designed and illustrated this piece to give off a relaxed atmosphere.
+										</p>
+					                </div>
+					            </div>
+
+					            <div data-thumb="img/top/Pages4.jpg" data-src="img/top/Pages4.jpg" data-link="#">
+					                <div class="camera_caption fadeFromBottom">
+					                	<h2>Magazine Redesign</h2>
+					                    <p>The challenge was to redesign an existing magazine in order to increase its appeal against competition. By combining my knowledge of layout design and typography, I managed to craft a more suiting appeal for the actual content it’s presenting.</p>
+					                </div>
+					            </div>
+
+					            <div data-thumb="img/top/Page-01.jpg" data-src="img/top/Page-01.jpg" data-link="#">
+					                <div class="camera_caption fadeFromBottom">
+					                	<h2>Exploring Layout</h2>
+					                    <p>The challenge was to redesign an existing magazine in order to increase its appeal against competition. By combining my knowledge of layout design and typography, I managed to craft a more suiting appeal for the actual content it’s presenting.</p>
+					                </div>
+					            </div>
+
+					        </div><!-- #camera_wrap_1 -->
+						</div><!--Closes col gu4 area-->
+
+						<article>
+							<!--Where the brief summary go-->
+							<div class="col gu6" id="briefContainer">
+								<h1 id="brief">Hi I'm Amy Hsuanwen Wang. Please call me Amy</h1>
+								<p id="intro">I’m a passionate curious all round nice person with skills in graphic design, UX/UI Design, web design, Video Editing and 3D environment creation. </p>
+							</div><!---Close col gu6 briefContainer-->
+						</article>
+					</div><!--Closes row gu6_2-->
+
+
+				<footer>
+					<h6>&copy; Amy Hsuanwen Wang</h6>
+				</footer>
+
+			</div><!--Closes the wrap-->
+		</div><!--Closes page gu6 (The overall container) -->
+	</body>
+</html>
