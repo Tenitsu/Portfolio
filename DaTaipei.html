@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.75" />
+		<title>Amy Hsuanwen Wang's Portfolio</title> <!--Title-->
+		<link rel="stylesheet" type = "text/css" href="portfolio.css"/> <!-- calling on style sheet and tell it that it's css -->
+		<link rel="stylesheet" media="(max-width: 1024px)" type="text/css" href="portfolio_tablet.css" />  <!--Css for tablet-->
+		<link rel="stylesheet" media="(max-width: 824px)" type="text/css" href="portfolio_mobile.css" /> <!-- Css for mobile-->
+
+		<!--Fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+		<!--Style for slider-->
+		<link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'> 
+		<!--Style for ligthbox-->
+		<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8" />
+
+		<!--JQuery-->
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script type='text/javascript' src="js/jquery.chocolat.js"></script>
+		<script type='text/javascript' src='js/jquery.min.js'></script>
+    	<script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+    	<script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+    	<script type='text/javascript' src='js/camera.js'></script> 
+
+
+		<script>
+			$(document).ready(function(){
+			  $("#contactme").click(function(){
+			    $("#contactinfo").slideToggle();
+			    $(this).toggleClass("down");
+			  });
+			});
+		</script>
+	</head>
+
+	<body>
+		<!--Page Container-->
+		<div class="page gu6">
+		<!--Create Head row for Logo and Page title-->
+				<div class="row pg-header" id="Header">
+					<div class="col gu6" id="LogoArea">
+						<a href="www.AmyHsuanwenWang.com"><img id="logo" src="img/Logo.png" alt="Amy Hsuanwen Wang's Portfolio" /></a>
+					</div><!--Closes the gu2 for logo-->
+
+					<div class="col gu6" id="navbk">
+						<nav>
+							<ul id="nav">
+								<li><a href="www.amyhsuanwenwang.com/works.html">my work</a>
+									<ul>
+										<li><a href="www.amyhsuanwenwang.com/design.html">Graphic Design</a></li>
+										<li><a href="www.amyhsuanwenwang.com/interface.html">Web / Interface Design</a></li>
+										<li><a href="www.amyhsuanwenwang.com/environment.html">Immersive environments</a></li>
+										<li><a href="www.amyhsuanwenwang.com/art.html">illustrations/conceptual art</a></li>
+									</ul>
+								</li>
+								<li><a href="www.amyhsuanwenwang.com/about.html">about me</a></li>
+								<li><a href="#" id="contactme" title="button">contact me</a></li>
+							</ul>
+						</nav>
+					</div><!--Closes col gu6-->
+
+					<div class="col gu6" id="contactinfo">
+						<ul>
+							<li><img id="icon" src="img/Email.png" alt="email" /><a class="hoverIcon" id="email" href="mailto:AmyHsuanwenWang@gmail.com">AmyHsuanwenWang@gmail.com</a></li>
+							<li>|</li>
+							<li id="phone"><img id="icon2" src="img/mobile.png" alt="mobile" />(604) 376 1859</li>
+						</ul>
+					</div><!--Closes contact window-->
+				</div><!--Closes row pg-header-->
+
+			<!--Area for actual content-->
+			<!--Where the actual slider and info go-->
+			<div id="wrap">
+				<div class="width100" id="moveDown">
+					<h1 class="workTitle">Da Taipei Business Card</h1>
+				</div>
+				<!--Column 1 For the images and slider-->
+				<div class="width60">
+					<p id="example1"><a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/taipei/Version2.jpg"><img class="Image"src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/taipei/Version2.jpg" alt="Da Taipei Business card" /></a>
+					</p>
+
+					<h2 class="workSubtitle">Process - Different Explorations</h2>
+					<h5>Below are a few different exploration of Typography/layout that I did</h5>
+					<p id="example6">
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/taipei/Version1.jpg" title="First Exploration">
+							<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/taipei/v1.jpg" /alt="">
+						</a>
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/taipei/Version3.jpg" title="Second Exploration">
+							<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/taipei/v2.jpg" / alt="">
+						</a>
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/taipei/Version4.jpg" title="Third Exploration">
+							<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/taipei/v3.jpg"/>
+						</a>
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/taipei/Version2.jpg" title="Final Design">
+							<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/taipei/v4.jpg"/>
+						</a>
+					</p>
+				</div>
+
+				<!--Column 2 For the Information-->
+				<div class="width40">
+					<h3>Project Details: </h3>
+					<h5 class="indent">Volunteer - Individual </h5>
+					<h3 class="workSubtitle">Programs/Equipment used:</h3>
+						<ul class="indentUL">
+							<li>- Canon EOS Rebel T1i</li>
+							<li>- Photoshop</li>
+							<li>- Illustrator</li>
+						</ul>
+					<h3 class="workSubtitle">Process</h3>
+					<p class="indentP">I started off by listing out the constraints that I have to work with as well as the needs of my client on a piece of paper. I first decide on the design approach best suited for the stall and then work my way up from there. As I was on location, I had the opportunity to survey the area, get a good feel of the atmosphere and take photos for reference. The stall had two really beautiful lanterns which captivated me and I wanted to use it on the card. The font choice was made based on the how well do it reflect the stall. As it is a food stall not an elaborate restaurant, I purposely worked with typefaces which had more of “hand written” feel to it. In a food stall, the customer could see who is cooking and thus I feel that by using a more hand written feel typeface, it could give off a much more open feeling compared to a more minimal clean typeface.</p> 
+					<p class="indentP">
+					The next step is to explore different layouts. I feel that imagining in one’s head is something but it is also generally different from when we actually create it. Therefore I created multiple versions so that I can get a better sense of what works better.
+					</p>
+					<h3 class="workSubtitle">More Detail about Project</h3>
+					<p class="indentP">During my trip to Taiwan, I came across a food stall in Taichung that sparked my interest. The food was different as they made use of Chinese herbal medicine as part of their ingredients. I later learned that this is called Soya-mixed meat. As I started chatting with the owner, they mentioned that they needed a redesign for their business card so I jumped in as I find this an interesting challenge. The requirements were that it needs to clearly communicate what the stall is as well as providing contact information. The time frame I had was one day. Overall, this project allowed me to demonstrate my proficiency in design with a different language as well as getting me some free food.</p>
+				</div>
+
+				
+
+				<footer>
+					<h6>&copy; Amy Hsuanwen Wang</h6>
+				</footer>
+
+			</div><!--Closes the wrap-->
+		</div><!--Closes page gu6 (The overall container) -->
+		
+		<!-- Javascript calls -->
+		<script type="text/javascript" charset="utf-8">
+				$(function() {
+					$('#example1 a').Chocolat({overlayColor:'#000',leftImg:'images/leftw.gif',rightImg:'images/rightw.gif',closeImg:'images/closew.gif'});
+					$('#example2 a').Chocolat({linkImages:false});
+					$('#example3 a').Chocolat({displayAsALink:true, setTitle:'A Cool Title'});
+					$('#example4 a').Chocolat({container : $('#container'), overlayColor:'silver', overlayOpacity:0.3});
+					$('#example5A a').Chocolat({displayAsALink:true, linksContainer: 'linksContainer'});
+					$('#example5B a').Chocolat({displayAsALink:true, linksContainer: 'linksContainer'});
+					$('#example6 a').Chocolat({overlayColor:'#000',leftImg:'images/leftw.gif',rightImg:'images/rightw.gif',closeImg:'images/closew.gif'});
+				});
+		</script>
+	</body>
+</html>

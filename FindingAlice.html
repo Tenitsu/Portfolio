@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.75" />
+		<title>Amy Hsuanwen Wang's Portfolio</title> <!--Title-->
+		<link rel="stylesheet" type = "text/css" href="portfolio.css"/> <!-- calling on style sheet and tell it that it's css -->
+		<link rel="stylesheet" media="(max-width: 1024px)" type="text/css" href="portfolio_tablet.css" />  <!--Css for tablet-->
+		<link rel="stylesheet" media="(max-width: 824px)" type="text/css" href="portfolio_mobile.css" /> <!-- Css for mobile-->
+
+		<!--Fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+		<!--Style for slider-->
+		<link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'> 
+		<!--Style for ligthbox-->
+		<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8" />
+
+		<!--JQuery-->
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script type='text/javascript' src="js/jquery.chocolat.js"></script>
+		<script type='text/javascript' src='js/jquery.min.js'></script>
+    	<script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+    	<script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+    	<script type='text/javascript' src='js/camera.js'></script> 
+
+
+		<script>
+			$(document).ready(function(){
+			  $("#contactme").click(function(){
+			    $("#contactinfo").slideToggle();
+			    $(this).toggleClass("down");
+			  });
+			});
+		</script>
+	</head>
+
+	<body>
+		<!--Page Container-->
+		<div class="page gu6">
+		<!--Create Head row for Logo and Page title-->
+				<div class="row pg-header" id="Header">
+					<div class="col gu6" id="LogoArea">
+						<a href="www.AmyHsuanwenWang.com"><img id="logo" src="img/Logo.png" alt="Amy Hsuanwen Wang's Portfolio" /></a>
+					</div><!--Closes the gu2 for logo-->
+
+					<div class="col gu6" id="navbk">
+						<nav>
+							<ul id="nav">
+								<li><a href="www.amyhsuanwenwang.com/works.html">my work</a>
+									<ul>
+										<li><a href="www.amyhsuanwenwang.com/design.html">Graphic Design</a></li>
+										<li><a href="www.amyhsuanwenwang.com/interface.html">Web / Interface Design</a></li>
+										<li><a href="www.amyhsuanwenwang.com/environment.html">Immersive environments</a></li>
+										<li><a href="www.amyhsuanwenwang.com/art.html">illustrations/conceptual art</a></li>
+									</ul>
+								</li>
+								<li><a href="www.AmyHsuanwenWang.com/about.html">about me</a></li>
+								<li><a href="#" id="contactme" title="button">contact me</a></li>
+							</ul>
+						</nav>
+					</div><!--Closes col gu6-->
+
+					<div class="col gu6" id="contactinfo">
+						<ul>
+							<li><img id="icon" src="img/Email.png" alt="email" /><a class="hoverIcon" id="email" href="mailto:AmyHsuanwenWang@gmail.com">AmyHsuanwenWang@gmail.com</a></li>
+							<li>|</li>
+							<li id="phone"><img id="icon2" src="img/mobile.png" alt="mobile" />(604) 376 1859</li>
+						</ul>
+					</div><!--Closes contact window-->
+				</div><!--Closes row pg-header-->
+
+			<!--Area for actual content-->
+			<!--Where the actual slider and info go-->
+			<div id="wrap">
+				<div class="width100" id="moveDown">
+					<h1 class="workTitle">Finding Alice</h1>
+				</div>
+				<!--Column 1 For the images and slider-->
+				<div class="width60">
+				<div class="embed-container">
+					<iframe src='http://www.youtube.com/embed/eo9pbwu1Cs4' frameborder='0' allowfullscreen></iframe>
+				</div>
+
+					<h2 class="workSubtitle">Screenshot of Environments that I created</h2>
+					<p id="example1">
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/findingAlice/1.jpg" title="screenshot1">
+							<img width="80" height="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/findingAlice/1.jpg" /alt="">
+						</a>
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/findingAlice/2.jpg" title="screenshot2">
+							<img width="80" height="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/findingAlice/2.jpg" /alt="">
+						</a>
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/findingAlice/3.jpg" title="screenshot3">
+							<img width="80" height="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/findingAlice/3.jpg" /alt="">
+						</a>
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/findingAlice/4.jpg" title="screenshot4">
+							<img width="80" height="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/findingAlice/4.jpg" /alt="">
+						</a>
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/findingAlice/5.jpg" title="screenshot5">
+							<img width="80" height="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/findingAlice/5.jpg" /alt="">
+						</a>
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/findingAlice/6.jpg" title="screenshot6">
+							<img width="80" height="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/findingAlice/6.jpg" /alt="">
+						</a>
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/findingAlice/7.jpg" title="screenshot7">
+							<img width="80" height="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/findingAlice/7.jpg" /alt="">
+						</a>
+					</p>
+					<h2 class="workSubtitle">Photos of my process (Affinity diagram, Brainstorm Sketches and Working in Unity 3D)</h2>
+					<p id="example2">
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/findingAlice/IMAG0247.jpg" title="Affinity Diagram">
+							<img width="80" height="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/findingAlice/IMAG0247.jpg" /alt="">
+						</a>
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/findingAlice/7(1).jpg" title="sketch">
+							<img width="80" height="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/findingAlice/7(1).jpg" /alt="">
+						</a>
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/findingAlice/8(1).jpg" title="sketch">
+							<img width="80" height="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/findingAlice/8(1).jpg" /alt="">
+						</a>
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/findingAlice/ClockWork.png" title="screenshot">
+							<img width="80" height="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/findingAlice/ClockWork.png" /alt="">
+						</a>
+					</p>
+					<h3 class="workSubtitle"><a class="removeWhite"href="http://www.sfu.ca/~hwa47/Portfolio/Public/Design.html">For more Detail on Process, please Click Here</a></h3>
+				</div>
+
+				<!--Column 2 For the Information-->
+				<div class="width40">
+					<h3>Project Details: </h3>
+					<h5 class="indent">School Project – Group – Team of 4 </h5>
+					<h3 class="workSubtitle">Programs used:</h3>
+						<ul class="indentUL">
+							<li>- Unity3D</li>
+							<li>- Maya</li>
+							<li>- Audacity</li>
+							<li>- Photoshop</li>
+						</ul>
+					<h3 class="workSubtitle">My contribution:</h3>
+						<ul class="indentUL">
+							<li>- Created 5 out of the 10 environments in game:</li>
+								<ul>
+									<li>- Bedroom</li>
+									<li>- Clock Tower</li>
+									<li>- Cross Road</li>
+									<li>- Card Chase</li>
+									<li>- Final Revelation scene</li>
+								</ul>
+							<li>- Programing</li>
+							<li>- Graphics</li>
+						</ul>
+					<h3 class="workSubtitle">Process</h3>
+					<p class="indentP">The creation can be broken down into Affinity diagram assisted brainstorm, conceptualize, modeling and finally programming in Unity 3D. More detailed explanation of the process can be found on an external website by <a class="removeWhite"href="http://www.sfu.ca/~hwa47/Portfolio/Public/Design.html">clicking here.</a></p> 
+					
+					<h3 class="workSubtitle">More Detail about Project</h3>
+					<p class="indentP">This project is about exploring and immersing in the surreal world of Alice while trying to beat the Prankster Alice at her game of hide and seek. The player travels from one world to the next by unlocking doors either by shooting at the blue flames or going through them. Furthermore, as Alice is a prankster, there will be fake doors that do nothing. As a little guide, there will also be little spot lights which will help guide the players through their journey. Our objective is to create an immersive environment that allows the user to use their imagination to interpret the world around them, experience a compelling narrative and explore handcrafted scenery. We want the user to experience a sense of mystery and curiosity when they enter our world. We focused on implementing sensory and imaginative immersion. Our prime concern was finding ways to occlude aspects from reality and use sounds to make the experience more immersive. This guided us in deciding on the atmospheric colours of the worlds as well as the sounds we use. Sounds are also manipulated to match each environment.</p>
+				</div>
+
+				
+
+				<footer>
+					<h6>&copy; Amy Hsuanwen Wang</h6>
+				</footer>
+
+			</div><!--Closes the wrap-->
+		</div><!--Closes page gu6 (The overall container) -->
+		
+		<!-- Javascript calls -->
+		<script type="text/javascript" charset="utf-8">
+				$(function() {
+					$('#example1 a').Chocolat({overlayColor:'#000',leftImg:'images/leftw.gif',rightImg:'images/rightw.gif',closeImg:'images/closew.gif'});
+					$('#example2 a').Chocolat({overlayColor:'#000',leftImg:'images/leftw.gif',rightImg:'images/rightw.gif',closeImg:'images/closew.gif'});
+					$('#example3 a').Chocolat({displayAsALink:true, setTitle:'A Cool Title'});
+					$('#example4 a').Chocolat({container : $('#container'), overlayColor:'silver', overlayOpacity:0.3});
+					$('#example5A a').Chocolat({displayAsALink:true, linksContainer: 'linksContainer'});
+					$('#example5B a').Chocolat({displayAsALink:true, linksContainer: 'linksContainer'});
+					$('#example6 a').Chocolat({overlayColor:'#000',leftImg:'images/leftw.gif',rightImg:'images/rightw.gif',closeImg:'images/closew.gif'});
+				});
+		</script>
+	</body>
+</html>

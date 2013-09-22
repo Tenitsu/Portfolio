@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.75" />
+		<title>Amy Hsuanwen Wang's Portfolio</title> <!--Title-->
+		<link rel="stylesheet" type = "text/css" href="portfolio.css"/> <!-- calling on style sheet and tell it that it's css -->
+		<link rel="stylesheet" media="(max-width: 1024px)" type="text/css" href="portfolio_tablet.css" />  <!--Css for tablet-->
+		<link rel="stylesheet" media="(max-width: 824px)" type="text/css" href="portfolio_mobile.css" /> <!-- Css for mobile-->
+
+		<!--Fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+		<!--Style for slider-->
+		<link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'> 
+		<!--Style for ligthbox-->
+		<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8" />
+
+		<!--JQuery-->
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script type='text/javascript' src="js/jquery.chocolat.js"></script>
+		<script type='text/javascript' src='js/jquery.min.js'></script>
+    	<script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+    	<script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+    	<script type='text/javascript' src='js/camera.js'></script> 
+
+
+		<script>
+			$(document).ready(function(){
+			  $("#contactme").click(function(){
+			    $("#contactinfo").slideToggle();
+			    $(this).toggleClass("down");
+			  });
+			});
+		</script>
+	</head>
+
+	<body>
+		<!--Page Container-->
+		<div class="page gu6">
+		<!--Create Head row for Logo and Page title-->
+				<div class="row pg-header" id="Header">
+					<div class="col gu6" id="LogoArea">
+						<a href="www.AmyHsuanwenWang.com"><img id="logo" src="img/Logo.png" alt="Amy Hsuanwen Wang's Portfolio" /></a>
+					</div><!--Closes the gu2 for logo-->
+
+					<div class="col gu6" id="navbk">
+						<nav>
+							<ul id="nav">
+								<li><a href="www.amyhsuanwenwang.com/works.html">my work</a>
+									<ul>
+										<li><a href="www.amyhsuanwenwang.com/design.html">Graphic Design</a></li>
+										<li><a href="www.amyhsuanwenwang.com/interface.html">Web / Interface Design</a></li>
+										<li><a href="www.amyhsuanwenwang.com/environment.html">Immersive environments</a></li>
+										<li><a href="www.amyhsuanwenwang.com/art.html">illustrations/conceptual art</a></li>
+									</ul>
+								</li>
+								<li><a href="www.AmyHsuanwenWang.com/about.html">about me</a></li>
+								<li><a href="#" id="contactme" title="button">contact me</a></li>
+							</ul>
+						</nav>
+					</div><!--Closes col gu6-->
+
+					<div class="col gu6" id="contactinfo">
+						<ul>
+							<li><img id="icon" src="img/Email.png" alt="email" /><a class="hoverIcon" id="email" href="mailto:AmyHsuanwenWang@gmail.com">AmyHsuanwenWang@gmail.com</a></li>
+							<li>|</li>
+							<li id="phone"><img id="icon2" src="img/mobile.png" alt="mobile" />(604) 376 1859</li>
+						</ul>
+					</div><!--Closes contact window-->
+				</div><!--Closes row pg-header-->
+
+			<!--Area for actual content-->
+			<!--Where the actual slider and info go-->
+			<div id="wrap">
+				<div class="width100" id="moveDown">
+					<h1 class="workTitle">Guilty? A Multi linear Story</h1>
+				</div>
+				<!--Column 1 For the images and slider-->
+				<div class="width60">
+					<p id="example1">
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/guilty/1.png" title="Page 1"><img class="Image"src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/guilty/1.png" alt="screenshot 1" />
+						</a>
+
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/guilty/2.png" title="screenshot 2">
+							<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/guilty/2.png" /alt="">
+						</a>
+
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/guilty/3.png" title="screenshot 3">
+							<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/guilty/3.png" /alt="">
+						</a>
+
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/guilty/4.png" title="screenshot 4">
+							<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/guilty/4.png" /alt="">
+						</a>
+
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/guilty/5.jpg" title="screenshot 5">
+							<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/guilty/5.jpg" /alt="">
+						</a>
+					</p>
+					<h6 class="workSubtitle"><a class="removeWhite" href="https://www.dropbox.com/s/2nrgavo47l7svn2/Guilty_IAT313_Final_Project.swf">The flash Interface can be Downloaded here</a></h6>
+					<h2 class="workSubtitle">Process </h2>
+					<p id="example2">
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/guilty/flowchart.jpg" title="flowchart">
+							<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/guilty/flowchart.jpg" /alt="">
+						</a>
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/guilty/Sketch.jpg" title="sketch">
+							<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/guilty/Sketch.jpg" /alt="">
+						</a>
+					</p>
+				</div>
+
+				<!--Column 2 For the Information-->
+				<div class="width40">
+					<h3>Project Details: </h3>
+					<h5 class="indent">School Project - Individual </h5>
+					<h3 class="workSubtitle">Group members:</h3>
+						<ul class="indentUL">
+							<li>- Amy Hsuanwen Wang</li>
+							<li>- Amy Nieh</li>
+							<li>- Calvin Dai</li>
+						</ul>
+					<h3 class="workSubtitle">My contribution:</h3>
+						<ul class="indentUL">
+							<li>- Overall Interface design</li>
+							<li>- Programing</li>
+							<li>- Graphics</li>
+						</ul>
+					<h3 class="workSubtitle">Programs used:</h3>
+						<ul class="indentUL">
+							<li>- Flash Professional (Action Script 3.0)</li>
+							<li>- Illustrator</li>
+							<li>- Photoshop</li>
+						</ul>
+					<h3 class="workSubtitle">Project Objective</h3>
+					<p class="indentP">To create an interactive multi linear story with emphasis on usability, user experience and interface design.</p>
+
+					<h3 class="workSubtitle">Process</h3>
+					<p class="indentP">The project started off with a brainstorming session to come up with a story. We made use of flowcharts to work out how each node is connected to each other and how many paths there are. After a story is decided, we created wireframes to quickly test how well our idea works so that we can move onto programming. Lastly, I used Action Script 3.0 to program the interaction and complete the project.</p>
+
+					<h3 class="workSubtitle">More Detail about Project</h3>
+					<p class="indentP">The project is primarily a multi linear story. In other words, we are concerned with removing elements that may distract the user from the story to create a suspension of disbelief effect. However, we are also concerned about usability and user experience. Therefore our final approach is to aim for a balance between the two and keep the navigation to a minimal but still intuitive enough so that the user won’t feel lost.</p>
+				</div>
+
+				
+
+				<footer>
+					<h6>&copy; Amy Hsuanwen Wang</h6>
+				</footer>
+
+			</div><!--Closes the wrap-->
+		</div><!--Closes page gu6 (The overall container) -->
+		
+		<!-- Javascript calls -->
+		<script type="text/javascript" charset="utf-8">
+				$(function() {
+					$('#example1 a').Chocolat({overlayColor:'#000',leftImg:'images/leftw.gif',rightImg:'images/rightw.gif',closeImg:'images/closew.gif'});
+					$('#example2 a').Chocolat({overlayColor:'#000',leftImg:'images/leftw.gif',rightImg:'images/rightw.gif',closeImg:'images/closew.gif'});
+					$('#example3 a').Chocolat({displayAsALink:true, setTitle:'A Cool Title'});
+					$('#example4 a').Chocolat({container : $('#container'), overlayColor:'silver', overlayOpacity:0.3});
+					$('#example5A a').Chocolat({displayAsALink:true, linksContainer: 'linksContainer'});
+					$('#example5B a').Chocolat({displayAsALink:true, linksContainer: 'linksContainer'});
+					$('#example6 a').Chocolat({overlayColor:'#000',leftImg:'images/leftw.gif',rightImg:'images/rightw.gif',closeImg:'images/closew.gif'});
+				});
+		</script>
+	</body>
+</html>

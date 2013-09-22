@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.75" />
+		<title>Amy Hsuanwen Wang's Portfolio</title> <!--Title-->
+		<link rel="stylesheet" type = "text/css" href="portfolio.css"/> <!-- calling on style sheet and tell it that it's css -->
+		<link rel="stylesheet" media="(max-width: 1024px)" type="text/css" href="portfolio_tablet.css" />  <!--Css for tablet-->
+		<link rel="stylesheet" media="(max-width: 824px)" type="text/css" href="portfolio_mobile.css" /> <!-- Css for mobile-->
+
+		<!--Fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+		<!--Style for slider-->
+		<link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'> 
+		<!--Style for ligthbox-->
+		<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8" />
+
+		<!--JQuery-->
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script type='text/javascript' src="js/jquery.chocolat.js"></script>
+		<script type='text/javascript' src='js/jquery.min.js'></script>
+    	<script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+    	<script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+    	<script type='text/javascript' src='js/camera.js'></script> 
+
+
+		<script>
+			$(document).ready(function(){
+			  $("#contactme").click(function(){
+			    $("#contactinfo").slideToggle();
+			    $(this).toggleClass("down");
+			  });
+			});
+		</script>
+	</head>
+
+	<body>
+		<!--Page Container-->
+		<div class="page gu6">
+		<!--Create Head row for Logo and Page title-->
+				<div class="row pg-header" id="Header">
+					<div class="col gu6" id="LogoArea">
+						<a href="www.AmyHsuanwenWang.com"><img id="logo" src="img/Logo.png" alt="Amy Hsuanwen Wang's Portfolio" /></a>
+					</div><!--Closes the gu2 for logo-->
+
+					<div class="col gu6" id="navbk">
+						<nav>
+							<ul id="nav">
+								<li><a href="www.amyhsuanwenwang.com/works.html">my work</a>
+									<ul>
+										<li><a href="www.amyhsuanwenwang.com/design.html">Graphic Design</a></li>
+										<li><a href="www.amyhsuanwenwang.com/interface.html">Web / Interface Design</a></li>
+										<li><a href="www.amyhsuanwenwang.com/environment.html">Immersive environments</a></li>
+										<li><a href="www.amyhsuanwenwang.com/art.html">illustrations/conceptual art</a></li>
+									</ul>
+								</li>
+								<li><a href="www.AmyHsuanwenWang.com/about.html">about me</a></li>
+								<li><a href="#" id="contactme" title="button">contact me</a></li>
+							</ul>
+						</nav>
+					</div><!--Closes col gu6-->
+
+					<div class="col gu6" id="contactinfo">
+						<ul>
+							<li><img id="icon" src="img/Email.png" alt="email" /><a class="hoverIcon" id="email" href="mailto:AmyHsuanwenWang@gmail.com">AmyHsuanwenWang@gmail.com</a></li>
+							<li>|</li>
+							<li id="phone"><img id="icon2" src="img/mobile.png" alt="mobile" />(604) 376 1859</li>
+						</ul>
+					</div><!--Closes contact window-->
+				</div><!--Closes row pg-header-->
+
+			<!--Area for actual content-->
+			<!--Where the actual slider and info go-->
+			<div id="wrap">
+				<div class="width100" id="moveDown">
+					<h1 class="workTitle">Unity Portfolio - Web Design</h1>
+				</div>
+				<!--Column 1 For the images and slider-->
+				<div class="width60">
+					<p id="example1"><a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/Unity/1.jpg"><img class="Image"src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/Unity/1.jpg" alt="Unity Portfolio" /></a>
+					<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/Unity/2.jpg" title="Project2 Showcase">
+						<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/Unity/2.jpg" /alt="">
+					</a>
+					<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/Unity/3.jpg" title="Final Project Showcase">
+						<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/Unity/3.jpg" /alt="">
+					</a>
+					<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/Unity/4.jpg" title="Design Process">
+						<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/Unity/4.jpg" /alt="">
+					</a>
+					</p>
+					<h2 class="workSubtitle"><a class="removeWhite"href="http://www.sfu.ca/~hwa47/Portfolio/Public/">Link to website</a></h2>
+					</p>
+				</div>
+
+				<!--Column 2 For the Information-->
+				<div class="width40">
+					<h3>Project Details: </h3>
+					<h5 class="indent">Individual</h5>
+					<h3 class="workSubtitle">Programs/Equipment used:</h3>
+						<ul class="indentUL">
+							<li>- Photoshop</li>
+							<li>- Dreamweaver</li>
+						</ul>
+
+					<h3 class="workSubtitle">Project objective</h3>
+					<p class="indentP">To create a portfolio to specifically showcase my Unity works.</p>
+
+					<h3 class="workSubtitle">Process</h3>
+					<p class="indentP">I was asked to create a portfolio that showcases the work I’ve done with Unity3D and that was my starting point. I started by listing out what exactly is it that I need from this portfolio and using that information to plan out my information architecture. As the keyword is “showcase”, I decided that the best approach is to show screenshot of my work on the home page and provide easy to see navigation at the top right hand corner. Using photoshop, I created a mockup to determine how I should layout everything and then I head over to Dreamweaver to code it.</p> 
+
+					<h3 class="workSubtitle">More Detail about Project</h3>
+					<p class="indentP">The emphasis of this web design project was usability and information architecture and thus Dreamweaver was used to build the site.</p>
+				</div>
+
+				
+
+				<footer>
+					<h6>&copy; Amy Hsuanwen Wang</h6>
+				</footer>
+
+			</div><!--Closes the wrap-->
+		</div><!--Closes page gu6 (The overall container) -->
+		
+		<!-- Javascript calls -->
+		<script type="text/javascript" charset="utf-8">
+				$(function() {
+					$('#example1 a').Chocolat({overlayColor:'#000',leftImg:'images/leftw.gif',rightImg:'images/rightw.gif',closeImg:'images/closew.gif'});
+					$('#example2 a').Chocolat({linkImages:false});
+					$('#example3 a').Chocolat({displayAsALink:true, setTitle:'A Cool Title'});
+					$('#example4 a').Chocolat({container : $('#container'), overlayColor:'silver', overlayOpacity:0.3});
+					$('#example5A a').Chocolat({displayAsALink:true, linksContainer: 'linksContainer'});
+					$('#example5B a').Chocolat({displayAsALink:true, linksContainer: 'linksContainer'});
+					$('#example6 a').Chocolat({overlayColor:'#000',leftImg:'images/leftw.gif',rightImg:'images/rightw.gif',closeImg:'images/closew.gif'});
+				});
+		</script>
+	</body>
+</html>

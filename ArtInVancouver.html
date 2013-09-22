@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.75" />
+		<title>Amy Hsuanwen Wang's Portfolio</title> <!--Title-->
+		<link rel="stylesheet" type = "text/css" href="portfolio.css"/> <!-- calling on style sheet and tell it that it's css -->
+		<link rel="stylesheet" media="(max-width: 1024px)" type="text/css" href="portfolio_tablet.css" />  <!--Css for tablet-->
+		<link rel="stylesheet" media="(max-width: 824px)" type="text/css" href="portfolio_mobile.css" /> <!-- Css for mobile-->
+
+		<!--Fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+		<!--Style for slider-->
+		<link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'> 
+		<!--Style for ligthbox-->
+		<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8" />
+
+		<!--JQuery-->
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script type='text/javascript' src="js/jquery.chocolat.js"></script>
+		<script type='text/javascript' src='js/jquery.min.js'></script>
+    	<script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+    	<script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+    	<script type='text/javascript' src='js/camera.js'></script> 
+
+
+		<script>
+			$(document).ready(function(){
+			  $("#contactme").click(function(){
+			    $("#contactinfo").slideToggle();
+			    $(this).toggleClass("down");
+			  });
+			});
+		</script>
+	</head>
+
+	<body>
+		<!--Page Container-->
+		<div class="page gu6">
+		<!--Create Head row for Logo and Page title-->
+				<div class="row pg-header" id="Header">
+					<div class="col gu6" id="LogoArea">
+						<a href="www.AmyHsuanwenWang.com"><img id="logo" src="img/Logo.png" alt="Amy Hsuanwen Wang's Portfolio" /></a>
+					</div><!--Closes the gu2 for logo-->
+
+					<div class="col gu6" id="navbk">
+						<nav>
+							<ul id="nav">
+								<li><a href="www.amyhsuanwenwang.com/works.html">my work</a>
+									<ul>
+										<li><a href="www.amyhsuanwenwang.com/design.html">Graphic Design</a></li>
+										<li><a href="www.amyhsuanwenwang.com/interface.html">Web / Interface Design</a></li>
+										<li><a href="www.amyhsuanwenwang.com/environment.html">Immersive environments</a></li>
+										<li><a href="www.amyhsuanwenwang.com/art.html">illustrations/conceptual art</a></li>
+									</ul>
+								</li>
+								<li><a href="www.AmyHsuanwenWang.com/about.html">about me</a></li>
+								<li><a href="#" id="contactme" title="button">contact me</a></li>
+							</ul>
+						</nav>
+					</div><!--Closes col gu6-->
+
+					<div class="col gu6" id="contactinfo">
+						<ul>
+							<li><img id="icon" src="img/Email.png" alt="email" /><a class="hoverIcon" id="email" href="mailto:AmyHsuanwenWang@gmail.com">AmyHsuanwenWang@gmail.com</a></li>
+							<li>|</li>
+							<li id="phone"><img id="icon2" src="img/mobile.png" alt="mobile" />(604) 376 1859</li>
+						</ul>
+					</div><!--Closes contact window-->
+				</div><!--Closes row pg-header-->
+
+			<!--Area for actual content-->
+			<!--Where the actual slider and info go-->
+			<div id="wrap">
+				<div class="width100" id="moveDown">
+					<h1 class="workTitle">Art in Vancouver Web Design Project</h1>
+				</div>
+				<!--Column 1 For the images and slider-->
+				<div class="width60">
+					<p id="example1"><a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/Art%20in%20Vancouver/ArtinVancouver.jpg"><img class="Image"src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/Art%20in%20Vancouver/ArtinVancouver.jpg" alt="Art in Vancouver" /></a>
+					<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/Art%20in%20Vancouver/1.jpg" title="pt1">
+						<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/Art%20in%20Vancouver/1.jpg" /alt="">
+					</a>
+					<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/Art%20in%20Vancouver/2.jpg" title="pt2">
+						<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/Art%20in%20Vancouver/2.jpg" /alt="">
+					</a>
+					<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/Art%20in%20Vancouver/3.jpg" title="pt3">
+						<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/Art%20in%20Vancouver/3.jpg" /alt="">
+					</a>
+					<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/Art%20in%20Vancouver/4.jpg" title="pt4">
+						<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/Art%20in%20Vancouver/4.jpg" /alt="">
+					</a>
+					<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/Art%20in%20Vancouver/5.jpg" title="pt5">
+						<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/Art%20in%20Vancouver/5.jpg" /alt="">
+					</a>
+					</p>
+
+					<h2 class="workSubtitle"><a class="removeWhite"href="http://www.sfu.ca/~hwa47/IAT%20443/ArtVancouver/">Link to website</a></h2>
+
+					<h2 class="workSubtitle">Draft</h2>
+					<h5>Below are sketches I did during the idea generating process</h5>
+					<p id="example6">
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/Art%20in%20Vancouver/Art%20in%20Vancouver.jpg" title="first idea">
+							<img width="80" height="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/Art%20in%20Vancouver/Art%20in%20Vancouver.jpg" /alt="">
+						</a>
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/Art%20in%20Vancouver/sketch.jpg" title="conceptual sketch">
+							<img width="80" height="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/Art%20in%20Vancouver/icon.jpg" / alt="">
+						</a>
+					</p>
+				</div>
+
+				<!--Column 2 For the Information-->
+				<div class="width40">
+					<h3>Project Details: </h3>
+					<h5 class="indent">School Project – Group of 4</h5>
+					<h3 class="workSubtitle">Programs/Equipment used:</h3>
+						<ul class="indentUL">
+							<li>- Photoshop</li>
+							<li>- Illustrator</li>
+							<li>- Dreamweaver</li>
+						</ul>
+					<h3 class="workSubtitle">My contribution:</h3>
+						<ul class="indentUL">
+							<li>- Overall Interface design</li>
+							<li>- Graphics creation</li>
+							<li>- Styling(CSS)</li>
+							<li>- Programing (Javascript)</li>
+							<li>- Sound design</li>
+						</ul>
+					<h3 class="workSubtitle">Project objective</h3>
+					<p class="indentP">This was a web interface exploration project with the emphasis on interactive video. As the user click on each person, a video will appear with a segment of the documentary we filmed. We decided to make it a one pager and rely on horizontal scrolling to make the user feel as if they are walking through the art gallery. </p>
+
+					<h3 class="workSubtitle">Process</h3>
+					<p class="indentP">We started off with only three constraints in mind. First of all, it has to allow us to show our documentary in sections. Secondly, it needs to be unique and draw the user in. Thirdly, it needs to be usable. We brainstormed a lot of ideas and sketched potential situations in which the user might use the website. In conclusion, we went with a horizontal one page scrolling idea and we sketched again. After the idea is solidified, I began creating the illustration in illustrator and Photoshop. Once that is completed, I used Dreamweaver to code and style the website.</p> 
+
+					<h3 class="workSubtitle">More Detail about Project</h3>
+					<p class="indentP">The emphasis of this project is on web design as oppose to web development and thus Dreamweaver was used as the tool for coding.</p>
+				</div>
+
+				
+
+				<footer>
+					<h6>&copy; Amy Hsuanwen Wang</h6>
+				</footer>
+
+			</div><!--Closes the wrap-->
+		</div><!--Closes page gu6 (The overall container) -->
+		
+		<!-- Javascript calls -->
+		<script type="text/javascript" charset="utf-8">
+				$(function() {
+					$('#example1 a').Chocolat({overlayColor:'#000',leftImg:'images/leftw.gif',rightImg:'images/rightw.gif',closeImg:'images/closew.gif'});
+					$('#example2 a').Chocolat({linkImages:false});
+					$('#example3 a').Chocolat({displayAsALink:true, setTitle:'A Cool Title'});
+					$('#example4 a').Chocolat({container : $('#container'), overlayColor:'silver', overlayOpacity:0.3});
+					$('#example5A a').Chocolat({displayAsALink:true, linksContainer: 'linksContainer'});
+					$('#example5B a').Chocolat({displayAsALink:true, linksContainer: 'linksContainer'});
+					$('#example6 a').Chocolat({overlayColor:'#000',leftImg:'images/leftw.gif',rightImg:'images/rightw.gif',closeImg:'images/closew.gif'});
+				});
+		</script>
+	</body>
+</html>

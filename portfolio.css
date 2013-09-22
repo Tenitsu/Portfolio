@@ -42,6 +42,7 @@ h1{
 h2{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
+	color: #25aae1; 
 }
 h3{
 	font-family: 'Open Sans', sans-serif;
@@ -75,7 +76,7 @@ a{
 	text-decoration: none;
 }
 
-a:hover{
+nav a:hover , .hoverIcon:hover{
 	background-image: url("img/hover.png");
 	color: white;
 }
@@ -89,8 +90,10 @@ ul li{
 p{
 	margin-top: 10px;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
 	font-size: 15px;
+	font-weight: 400;
+	color: grey;
+	line-height: 20px;
 }
 
 nav ul ul {
@@ -270,6 +273,7 @@ All The Class elements
 .skills{
 	float: left;
 	width: 63%;
+	/*border: blue 1px solid;*/
 }
 
 .skills ul{
@@ -291,14 +295,76 @@ All The Class elements
 	padding-left: 5px;
 }
 
+.width25{
+	float: left;
+	width: 23.5%;
+	padding-right: 5px;
+	padding-left: 5px;
+	/*border: blue 1px solid;*/
+}
+
 .width32{
 	float: left;
 	width: 33%;
+	padding-bottom: 10px;
+	/*border: blue 1px solid;*/
 }
 
 .width33{
 	float: left;
 	width: 33%;
+	/*border: blue 1px solid;*/
+}
+
+/*This is where the infomation for each project page is setted*/
+.width40{
+	float: left;
+	padding-left: 15px;
+	width: 40%;
+	/*border: blue 1px solid;*/
+}
+.width40 p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	color: grey;
+}
+
+.width40 ul li{
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	color: grey;
+}
+
+/*This is where the Image for each project page is setted*/
+.width60{
+	float: left;
+	width: 56%;
+	/*border: red 1px solid;*/
+}
+
+.width100inside{
+	float:left;
+	width: 80%;
+	margin-bottom: 10px;
+	background-color: #dedede;
+	border: 20px solid #dedede;
+	/*box-shadow: 5px 5px 5px #888888;*/
+	border-radius:5px;
+	/*border: pink 1px solid;*/
+}
+
+.width100inside p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	line-height: 15px;
+	color: grey;
+}
+
+.width100inside:hover{
+	box-shadow: 5px 5px 5px #888888;
 }
 
 .width100{
@@ -307,6 +373,7 @@ All The Class elements
 	line-height: 25px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	/*border: blue 1px solid;*/
 }
 
 .width100 h2, h3, h4, h5{
@@ -314,12 +381,92 @@ All The Class elements
 
 }
 
+.width101{
+	float: left;
+	width: 100%;
+}
+
 .placeholder{
 	width: 100%;
+}
+
+.subtitle{
+	padding-bottom: 15px;
+}
+
+.thumbnail{
+	width: 100%;
+}
+
+.description{
+	padding-top: 10px;
+	margin-left: -30px;
+
+}
+
+.Image{
+	width: 100%;
+	margin-top: -10px;  ?/*Note the p has a 10px margin so I subtract 10px to cancel it*/
+}
+
+.workTitle{
+	color: #25aae1;
+	font-size: 25px;
+	padding-bottom: 8px;
+	border-bottom: 3px solid #dedede;
+}
+
+.indent{
+	margin-top: 8px;
+	margin-left: 74px;
+}
+
+/*Indent ul on each project page*/
+.indentUL{
+	margin-top: 8px;
+	margin-left: 55px;
+}
+
+.indentUL ul{
+	margin-top: 8px;
+	margin-left: 55px;
+}
+
+/*Indent ul on each project page*/
+.indentP{
+	margin-top: 8px;
+	margin-left: 100px;
+}
+
+/*add space at top of title located on each project page*/
+.workSubtitle{
+	margin-top: 20px;
+}
+
+.removeWhite{
+	color: grey;
+}
+
+.removeWhite:hover{
+	color: #25aae1;
+	background-image: url("img/hover.png");
+}
+
+.white{
+	color: white;
 }
 /*----------------------------------------------------------------------------------
 All The ID elements
 ----------------------------------------------------------------------------------*/
+#moveDown{
+	margin-top: 220px;
+}
+
+
+#graphicdesign{
+	padding-bottom: 40px;
+}
+
 #logo{
 	margin-top: 15px;
 	margin-left: 15px;
@@ -352,7 +499,7 @@ All The ID elements
 	color: #25aae1;
 	padding-left: 50px;
 	font-size: 50px;
-	border-bottom: 5px solid white;
+	border-bottom: 5px solid #dedede;
 }
 
 #me{
@@ -370,7 +517,7 @@ All The ID elements
 }
 
 #snav{
-	margin-right: 25%;
+	margin-right: 15%;
 }
 
 
@@ -403,6 +550,7 @@ All The ID elements
 	margin-left: 40px;
 	margin-bottom: 30px;
 	font-weight: 100;
+	line-height: 20px;
 }
 
 #back_to_camera {
@@ -460,6 +608,7 @@ All The ID elements
 
 #title{
 	padding-top: 230px;
+	padding-bottom: 20px;
 }
 
 #contactinfo{
@@ -516,4 +665,21 @@ h1.title{
 	background:transparent url(title.png) no-repeat top left;
 	width:633px;
 	height:69px;
+}
+/*Fix Youtube Video embeding problem*/
+.embed-container { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	padding-top: 30px; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+	height: auto; 
+} 
+.embed-container iframe, .embed-container object, .embed-container embed {
+	position: absolute; 
+	top: 0; 
+	left: 0;
+	width: 100%; 
+	height: 100%; 
 }

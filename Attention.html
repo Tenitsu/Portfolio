@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.75" />
+		<title>Amy Hsuanwen Wang's Portfolio</title> <!--Title-->
+		<link rel="stylesheet" type = "text/css" href="portfolio.css"/> <!-- calling on style sheet and tell it that it's css -->
+		<link rel="stylesheet" media="(max-width: 1024px)" type="text/css" href="portfolio_tablet.css" />  <!--Css for tablet-->
+		<link rel="stylesheet" media="(max-width: 824px)" type="text/css" href="portfolio_mobile.css" /> <!-- Css for mobile-->
+
+		<!--Fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+		<!--Style for slider-->
+		<link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'> 
+		<!--Style for ligthbox-->
+		<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8" />
+
+		<!--JQuery-->
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script type='text/javascript' src="js/jquery.chocolat.js"></script>
+		<script type='text/javascript' src='js/jquery.min.js'></script>
+    	<script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+    	<script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+    	<script type='text/javascript' src='js/camera.js'></script> 
+
+
+		<script>
+			$(document).ready(function(){
+			  $("#contactme").click(function(){
+			    $("#contactinfo").slideToggle();
+			    $(this).toggleClass("down");
+			  });
+			});
+		</script>
+	</head>
+
+	<body>
+		<!--Page Container-->
+		<div class="page gu6">
+		<!--Create Head row for Logo and Page title-->
+				<div class="row pg-header" id="Header">
+					<div class="col gu6" id="LogoArea">
+						<a href="www.AmyHsuanwenWang.com"><img id="logo" src="img/Logo.png" alt="Amy Hsuanwen Wang's Portfolio" /></a>
+					</div><!--Closes the gu2 for logo-->
+
+					<div class="col gu6" id="navbk">
+						<nav>
+							<ul id="nav">
+								<li><a href="www.amyhsuanwenwang.com/works.html">my work</a>
+									<ul>
+										<li><a href="www.amyhsuanwenwang.com/design.html">Graphic Design</a></li>
+										<li><a href="www.amyhsuanwenwang.com/interface.html">Web / Interface Design</a></li>
+										<li><a href="www.amyhsuanwenwang.com/environment.html">Immersive environments</a></li>
+										<li><a href="www.amyhsuanwenwang.com/art.html">illustrations/conceptual art</a></li>
+									</ul>
+								</li>
+								<li><a href="www.amyhsuanwenwang.com/about.html">about me</a></li>
+								<li><a href="#" id="contactme" title="button">contact me</a></li>
+							</ul>
+						</nav>
+					</div><!--Closes col gu6-->
+
+					<div class="col gu6" id="contactinfo">
+						<ul>
+							<li><img id="icon" src="img/Email.png" alt="email" /><a class="hoverIcon" id="email" href="mailto:AmyHsuanwenWang@gmail.com">AmyHsuanwenWang@gmail.com</a></li>
+							<li>|</li>
+							<li id="phone"><img id="icon2" src="img/mobile.png" alt="mobile" />(604) 376 1859</li>
+						</ul>
+					</div><!--Closes contact window-->
+				</div><!--Closes row pg-header-->
+
+			<!--Area for actual content-->
+			<!--Where the actual slider and info go-->
+			<div id="wrap">
+				<div class="width100" id="moveDown">
+					<h1 class="workTitle">Half-attention please – User interface design</h1>
+				</div>
+				<!--Column 1 For the images and slider-->
+				<div class="width60">
+					<p id="example1"><a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/1b.jpg"><img class="Image"src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/1b.jpg" alt="Da Taipei Business card" /></a>
+					<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/2.jpg" title="screen2">
+						<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/2.jpg" /alt="">
+					</a>
+					<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/3.jpg" title="screen3">
+						<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/3.jpg" /alt="">
+					</a>
+					<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/4.jpg" title="screen4">
+						<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/4.jpg" /alt="">
+					</a>
+					<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/5.jpg" title="screen5">
+						<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/5.jpg" /alt="">
+					</a>
+					</p>
+					<h2 class="workSubtitle"><a class="removeWhite"href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/Half-attention_please.swf">Link to Flash Demo</a></h2>
+					<h2 class="workSubtitle"><a class="removeWhite"href="https://vimeo.com/32045501">Usability Testing Video</a></h2>
+					<h2 class="workSubtitle"><a class="removeWhite"href="http://vimeo.com/33092135">Documentation Video</a></h2>
+					<h2 class="workSubtitle">Process - Context exploration </h2>
+					<h5>Below are conceptual images done to brainstorm potential situations and solutions that we may work on.</h5>
+					<p id="example2">
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/Possible%20project%201.jpg" title="Scenario 1">
+							<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/Possible%20project%201.jpg" /alt="">
+						</a>
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/Possible%20project%202.jpg" title="Scenario 2">
+							<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/Possible%20project%202.jpg" / alt="">
+						</a>
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/Possible%20project%203.jpg" title="Scenario 3">
+							<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/Possible%20project%203.jpg"/>
+						</a>
+					</p>
+					<h2 class="workSubtitle">Process - Brainstorming </h2>
+					<h5>Below are some of our brainstorming notes. </h5>
+					<p id="example3">
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/CCF26102011_00000.jpg" title="Brainstorm notes">
+							<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/CCF26102011_00000.jpg" /alt="">
+						</a>
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/CCF26102011_00001.jpg" title="Brainstorm notes">
+							<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/CCF26102011_00001.jpg" / alt="">
+						</a>
+					</p>
+					<h2 class="workSubtitle">Process - Storyboard </h2>
+					<h5>Below are storyboards we did to communicate a scenario or how we think a user might use the interface.</h5>
+					<p id="example4">
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/Storyboard%20pg1.jpg" title="Storyboard1">
+							<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/Storyboard%20pg1.jpg" /alt="">
+						</a>
+						<a href="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/Storyboard%20pg2.jpg" title="Storyboard2">
+							<img width="80" src="https://dl.dropboxusercontent.com/u/24053034/Portfolio/attention/Storyboard%20pg2.jpg" / alt="">
+						</a>
+					</p>
+				</div>
+
+				<!--Column 2 For the Information-->
+				<div class="width40">
+					<h3>Project Details: </h3>
+					<h5 class="indent">School - team of 4</h5>
+					<h3 class="workSubtitle">My contribution: </h3>
+						<ul class="indentUL">
+							<li>- Theme/idea generation</li>
+							<li>- Interface layout design (Contributed)</li>
+							<li>- Heuristic evaluation</li>
+							<li>- Storyboard</li>
+							<li>- Programming the Accordion menu, saving, Styling of text in word processor, alignment and changing color of the text.</li>
+						</ul>
+					<h3 class="workSubtitle">Programs/Equipment used:</h3>
+						<ul class="indentUL">
+							<li>- Flash</li>
+							<li>- Photoshop</li>
+							<li>- Illustrator</li>
+							<li>- Pencil</li>
+						</ul>
+					<h3 class="workSubtitle">Project Objective</h3>
+					<p class="indentP">Create and Design a Screen-Application interface which would increase accessibility to lecture materials for students in lectures while reducing distractions at the same time.</p> 
+
+					<h3 class="workSubtitle">Process</h3>
+					<p class="indentP">We started by coming up with a theme and use-context with emphasis on who are we designing for and why it matters. After that, we did some preliminary research to get more information on the audience that we are aiming at. After the theme and use context is decided, we drew storyboards to get a sense of under what condition would the application be used. Once we started sketching thumbnail ideas and wireframe to study the usability through the use of heuristic evaluation and appeal of the different layout ideas. One we are comfortable with our design, we moved onto flash to program a prototypes and work more on the visual design. With the Flash Prototype done, we did user testing with our prototype to determine if our solution worked or where we need to improve.</p> 
+
+					<h3 class="workSubtitle">More Detail about Project</h3>
+					<p class="indentP">The goal of this project is to design an interface which would increase accessibility to lecture materials for students in lectures while reducing distractions at the same time. To achieve our goal, we designed a constraint system which would block off access to all the programs and websites for a certain amount of time that the user defines. Warning messages are present to confirm the user's choice before it's activated.</p>
+					<h3 class="workSubtitle">Rationale</h3>
+					<p class="indentP">The issue we are trying to solve is distraction in lectures. The root of this problem is the issue of accessibility to lecture materials. Our target audiences are students as we are constantly dealing with distractions in class due to the prevalence of laptops, cellphones and tablets. The aim of our solution is to enhance the learning experience in lecture halls by reducing distractions. Our major solution concept is by integrating the source of distraction into the lectures. Thus we need to consider how to make use of cellphones, laptops and tablets in lectures.</p>
+				</div>
+
+				<footer>
+					<h6>&copy; Amy Hsuanwen Wang</h6>
+				</footer>
+
+			</div><!--Closes the wrap-->
+		</div><!--Closes page gu6 (The overall container) -->
+		
+		<!-- Javascript calls -->
+		<script type="text/javascript" charset="utf-8">
+				$(function() {
+					$('#example1 a').Chocolat({overlayColor:'#000',leftImg:'images/leftw.gif',rightImg:'images/rightw.gif',closeImg:'images/closew.gif'});
+					$('#example2 a').Chocolat({overlayColor:'#000',leftImg:'images/leftw.gif',rightImg:'images/rightw.gif',closeImg:'images/closew.gif'});
+					$('#example3 a').Chocolat({overlayColor:'#000',leftImg:'images/leftw.gif',rightImg:'images/rightw.gif',closeImg:'images/closew.gif'});
+					$('#example4 a').Chocolat({overlayColor:'#000',leftImg:'images/leftw.gif',rightImg:'images/rightw.gif',closeImg:'images/closew.gif'});
+					$('#example5A a').Chocolat({displayAsALink:true, linksContainer: 'linksContainer'});
+					$('#example5B a').Chocolat({displayAsALink:true, linksContainer: 'linksContainer'});
+					$('#example6 a').Chocolat({overlayColor:'#000',leftImg:'images/leftw.gif',rightImg:'images/rightw.gif',closeImg:'images/closew.gif'});
+				});
+		</script>
+	</body>
+</html>
