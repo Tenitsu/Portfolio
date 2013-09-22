@@ -76,9 +76,9 @@ a{
 	text-decoration: none;
 }
 
-a:hover{
+nav a:hover , .hoverIcon:hover{
 	background-image: url("img/hover.png");
-	color: #25aae1;
+	color: white;
 }
 
 
@@ -288,6 +288,14 @@ All The Class elements
 	padding-left: 5px;
 }
 
+.width25{
+	float: left;
+	width: 23.5%;
+	padding-right: 5px;
+	padding-left: 5px;
+	/*border: blue 1px solid;*/
+}
+
 .width32{
 	float: left;
 	width: 33%;
@@ -296,6 +304,56 @@ All The Class elements
 .width33{
 	float: left;
 	width: 33%;
+}
+/*This is where the infomation for each project page is setted*/
+.width40{
+	float: left;
+	padding-left: 15px;
+	width: 40%;
+	/*border: blue 1px solid;*/
+}
+.width40 p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	color: grey;
+}
+
+.width40 ul li{
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	color: grey;
+}
+
+/*This is where the Image for each project page is setted*/
+.width60{
+	float: left;
+	width: 56%;
+	/*border: red 1px solid;*/
+}
+
+.width100inside{
+	float:left;
+	width: 80%;
+	margin-bottom: 10px;
+	background-color: #dedede;
+	border: 20px solid #dedede;
+	/*box-shadow: 5px 5px 5px #888888;*/
+	border-radius:5px;
+	/*border: pink 1px solid;*/
+}
+
+.width100inside p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	line-height: 15px;
+	color: grey;
+}
+
+.width100inside:hover{
+	box-shadow: 5px 5px 5px #888888;
 }
 
 .width100{
@@ -312,12 +370,95 @@ All The Class elements
 
 }
 
+.width101{
+	float: left;
+	width: 100%;
+}
+
 .placeholder{
 	width: 100%;
 }
+
+.subtitle{
+	padding-bottom: 15px;
+}
+
+.thumbnail{
+	width: 100%;
+}
+
+.description{
+	padding-top: 10px;
+	margin-left: -30px;
+
+}
+
+.Image{
+	width: 100%;
+	margin-top: -10px;  /*Note the p has a 10px margin so I subtract 10px to cancel it*/
+}
+
+.workTitle{
+	color: #25aae1;
+	font-size: 25px;
+	padding-bottom: 8px;
+	border-bottom: 3px solid #dedede;
+}
+
+.indent{
+	margin-top: 8px;
+	margin-left: 74px;
+}
+
+/*Indent ul on each project page*/
+.indentUL{
+	margin-top: 8px;
+	margin-left: 55px;
+}
+
+.indentUL ul{
+	margin-top: 8px;
+}
+
+/*Indent ul on each project page*/
+.indentP{
+	margin-top: 8px;
+	margin-left: 100px;
+}
+
+/*add space at top of title located on each project page*/
+.workSubtitle{
+	margin-top: 20px;
+}
+
+.removeWhite{
+	color: grey;
+}
+
+.removeWhite:hover{
+	color: #25aae1;
+	background-image: url("img/hover.png");
+}
+
+.white{
+	color: white;
+}
+/*
 ----------------------------------------------------------------------------
 All The ID elements
 ----------------------------------------------------------------------------------*/
+#moveDown{
+	margin-top: 20px;
+}
+
+#moveDownFooter{
+	margin-top: 30px;
+}
+
+#graphicdesign{
+	padding-bottom: 40px;
+}
+
 #logo{
 	margin-top: 15px;
 	margin-left: 7px;
@@ -332,8 +473,6 @@ All The ID elements
 	height: 45px;
 	padding-right: 10px;
 }
-
-
 
 #computer{
 	width: 101%;
@@ -365,10 +504,6 @@ All The ID elements
 	padding-bottom: 2px;
 }
 
-#nav{
-	padding-top: -10px;
-	/*border: 1px blue solid;*/
-}
 
 #snav{
 	margin-right: 13%;
@@ -424,7 +559,7 @@ All The ID elements
 }
 
 #wrap { 
-	width: 100%; 
+	width: 95%; 
 	margin: 0 auto; 
 	z-index: -50;
 }
@@ -433,6 +568,12 @@ All The ID elements
 	width: 930px; 
 	padding-top: 0px;
 	margin: 0 auto;
+	z-index: -50;
+}
+
+#wrap3 { 
+	width: 95%; 
+	margin: 0 auto; 
 	z-index: -50;
 }
 

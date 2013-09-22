@@ -42,6 +42,30 @@ h2{
 	font-size: 20px;
 }
 
+h3{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: #25aae1; 
+}
+
+h4{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: #25aae1; 
+}
+
+h5{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	color: grey;
+}
+
+h6{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10px;
+	color: grey;
+}
+
 a{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 100;
@@ -50,9 +74,9 @@ a{
 	text-decoration: none;
 }
 
-a:hover{
+nav a:hover , .hoverIcon:hover{
 	background-image: url("img/hover.png");
-	color: #25aae1;
+	color: white;
 }
 
 
@@ -68,11 +92,6 @@ p{
 	font-size: 15px;
 }
 
-h6{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 10px;
-	color: grey;
-}
 
 nav ul ul {
 	/*This hides the submenu initially*/
@@ -255,9 +274,22 @@ All The Class elements
 	color: #25aae1;
 }
 
+.skills ul li h5:hover{
+	background-image: url("img/hover.png");
+	color:white;
+}
+
 .skills ul li h5{
 	display: inline;
 	padding-left: 5px;
+}
+
+.width25{
+	float: left;
+	width: 42.1%;
+	padding-right: 5px;
+	padding-left: 5px;
+	/*border: blue 1px solid;*/
 }
 
 .width32{
@@ -271,6 +303,59 @@ All The Class elements
 	width: 80%;
 }
 
+/*This is where the infomation for each project page is setted*/
+.width40{
+	float: left;
+	width: 100%;
+	margin-top: 15px;
+	margin-left: -46px;
+	/*border: blue 1px solid;*/
+}
+.width40 p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	color: grey;
+}
+
+.width40 ul li{
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	color: grey;
+
+}
+
+/*This is where the Image for each project page is setted*/
+.width60{
+	float: left;
+	width: 100%;
+	/*border: red 1px solid;*/
+}
+
+.width100inside{
+	float:left;
+	width: 80%;
+	margin-bottom: 10px;
+	background-color: #dedede;
+	border: 20px solid #dedede;
+	/*box-shadow: 5px 5px 5px #888888;*/
+	border-radius:5px;
+	/*border: pink 1px solid;*/
+}
+
+.width100inside p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	line-height: 15px;
+	color: grey;
+}
+
+.width100inside:hover{
+	box-shadow: 5px 5px 5px #888888;
+}
+
 .width100{
 	float:left;
 	width: 100%;
@@ -280,16 +365,92 @@ All The Class elements
 }
 
 .width100 h2, h3, h4, h5{
-	padding-left: 30px;
 
+
+}
+.width101{
+	float: left;
+	width: 100%;
 }
 
 .placeholder{
 	width: 100%;
 }
+
+.subtitle{
+	padding-bottom: 15px;
+}
+
+.thumbnail{
+	width: 100%;
+}
+
+.description{
+	padding-top: 10px;
+	margin-left: -30px;
+}
+
+.Image{
+	width: 100%;
+	margin-top: -10px;  /*Note the p has a 10px margin so I subtract 10px to cancel it*/
+}
+
+.workTitle{
+	color: #25aae1;
+	font-size: 25px;
+	padding-bottom: 8px;
+	border-bottom: 3px solid #dedede;
+}
+
+.indent{
+	margin-top: 8px;
+}
+
+/*Indent ul on each project page*/
+.indentUL{
+	margin-top: 8px;
+
+}
+
+.indentUL ul{
+	margin-top: 8px;
+}
+
+/*Indent ul on each project page*/
+.indentP{
+	margin-top: 8px;
+
+}
+
+/*add space at top of title located on each project page*/
+.workSubtitle{
+	margin-top: 20px;
+}
+
+.removeWhite{
+	color: grey;
+}
+
+.removeWhite:hover{
+	color: #25aae1;
+	background-image: url("img/hover.png");
+}
+
+.white{
+	color: white;
+}
+
+.hoverIcon:hover{
+	background-image: url("img/hover.png");
+	color: white;
+}
 /*----------------------------------------------------------------------------------
 All The ID elements
 ----------------------------------------------------------------------------------*/
+#moveDownFooter{
+	margin-top: 30px;
+}
+
 #logo{
 	margin-top: 20px;
 	margin-left: 47px;
@@ -400,6 +561,10 @@ All The ID elements
 	margin: 0 auto; 
 }
 
+#wrap3 { 
+	width: 100%; 
+	margin: 0 auto; 
+} 
 #wrap2 { 
 	width: 80%; 
 	margin: 0 auto;
@@ -516,8 +681,4 @@ h1.title{
 		border-bottom: 9px solid #c7c7c7; 
 		background-color:rgba(0,0,0,0.5); 
 		}
-}
-
-@-o-viewport {
-  width: device-width;
 }

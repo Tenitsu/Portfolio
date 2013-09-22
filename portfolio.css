@@ -406,7 +406,7 @@ All The Class elements
 
 .Image{
 	width: 100%;
-	margin-top: -10px;  ?/*Note the p has a 10px margin so I subtract 10px to cancel it*/
+	margin-top: -10px;  /*Note the p has a 10px margin so I subtract 10px to cancel it*/
 }
 
 .workTitle{
@@ -429,7 +429,6 @@ All The Class elements
 
 .indentUL ul{
 	margin-top: 8px;
-	margin-left: 55px;
 }
 
 /*Indent ul on each project page*/
@@ -582,6 +581,12 @@ All The ID elements
 	z-index: -50;
 }
 
+#wrap3 { 
+	width: 930px; 
+	margin: 0 auto;
+	z-index: -50;
+}
+
 #camera_wrap_1{
 	width: 100%;
 }
@@ -603,7 +608,6 @@ All The ID elements
 
 #snavbk{
 	background-color:rgba(0,0,0,0.5);
-	z-index: 
 }
 
 #title{
